@@ -19,6 +19,9 @@
 		8527639D1AFD3E2300FC29AF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8527639B1AFD3E2300FC29AF /* Interface.storyboard */; };
 		8527639F1AFD3E2300FC29AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8527639E1AFD3E2300FC29AF /* Images.xcassets */; };
 		852763A21AFD3E2300FC29AF /* 52 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 852763871AFD3E2300FC29AF /* 52 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		852763AC1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */ = {isa = PBXBuildFile; fileRef = 852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */; };
+		852763AD1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */ = {isa = PBXBuildFile; fileRef = 852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */; };
+		852763AE1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */ = {isa = PBXBuildFile; fileRef = 852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */; };
 		85AEA0C61AFD33360098ED1D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AEA0C51AFD33360098ED1D /* Notification.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +74,7 @@
 		8527639A1AFD3E2300FC29AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8527639C1AFD3E2300FC29AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8527639E1AFD3E2300FC29AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue.dfont; sourceTree = "<group>"; };
 		85AEA0C51AFD33360098ED1D /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,7 @@
 		5A58C3161A8BF43400CF08FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */,
 				5A58C3171A8BF43400CF08FA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -276,6 +281,7 @@
 			files = (
 				5A58C31E1A8BF43400CF08FA /* Main.storyboard in Resources */,
 				5A58C3231A8BF43400CF08FA /* LaunchScreen.xib in Resources */,
+				852763AC1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */,
 				5A58C3201A8BF43400CF08FA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				852763911AFD3E2300FC29AF /* Images.xcassets in Resources */,
+				852763AD1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */,
 				852763951AFD3E2300FC29AF /* 52 WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8527639D1AFD3E2300FC29AF /* Interface.storyboard in Resources */,
+				852763AE1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */,
 				8527639F1AFD3E2300FC29AF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

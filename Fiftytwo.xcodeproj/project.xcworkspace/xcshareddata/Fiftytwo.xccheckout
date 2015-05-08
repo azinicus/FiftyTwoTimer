@@ -10,6 +10,8 @@
 	<string>Fiftytwo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>8E308C543A9122DEC6BF5FA282233EE0B9D1167C</key>
+		<string>https://github.com/brightbot/FiftyTwoTimer</string>
 		<key>FDBB9C174E95A3579AE0CE7AC2FB68494B5B2778</key>
 		<string>https://github.com/rictyran/Stopwatch</string>
 	</dict>
@@ -17,17 +19,27 @@
 	<string>Fiftytwo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>FDBB9C174E95A3579AE0CE7AC2FB68494B5B2778</key>
+		<key>8E308C543A9122DEC6BF5FA282233EE0B9D1167C</key>
 		<string>../..</string>
+		<key>FDBB9C174E95A3579AE0CE7AC2FB68494B5B2778</key>
+		<string>../../../Stopwatch%20Swift</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/rictyran/Stopwatch</string>
+	<string>https://github.com/brightbot/FiftyTwoTimer</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>FDBB9C174E95A3579AE0CE7AC2FB68494B5B2778</string>
+	<string>8E308C543A9122DEC6BF5FA282233EE0B9D1167C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8E308C543A9122DEC6BF5FA282233EE0B9D1167C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>52Timer</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

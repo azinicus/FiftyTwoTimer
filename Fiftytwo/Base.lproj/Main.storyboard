@@ -17,6 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jE-ud-K7D">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Kgv-h6-z02"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="52:00" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rX-F7-JmQ">
                                 <rect key="frame" x="24" y="181" width="273" height="206"/>
                                 <constraints>
@@ -38,6 +45,51 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="nIt-x8-GS5"/>
+                                    <barButtonItem style="plain" id="Jue-6Z-BFz">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SJ7-pV-4mv">
+                                            <rect key="frame" x="87" y="7" width="31" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <state key="normal" title="⚫︎">
+                                                <color key="titleColor" red="0.2627450980392157" green="0.63921568627450975" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="colorButton1:" destination="vXZ-lx-hvc" eventType="touchDown" id="cOp-MN-EvB"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="E6P-o9-BDh"/>
+                                    <barButtonItem style="plain" id="zAc-k6-CBP">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="uZ8-XY-bwT">
+                                            <rect key="frame" x="182" y="7" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <state key="normal" title="⚫︎">
+                                                <color key="titleColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="colorButton2:" destination="vXZ-lx-hvc" eventType="touchDown" id="8IG-eI-OLa"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Wyf-Jh-fcL"/>
+                                    <barButtonItem style="plain" id="sVi-di-SML">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NqH-eS-Tn2">
+                                            <rect key="frame" x="204" y="7" width="42" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <state key="normal" title="⚫︎">
+                                                <color key="titleColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="colorButton3:" destination="vXZ-lx-hvc" eventType="touchDown" id="k3l-Ym-Wsk"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="z4T-LS-psJ"/>
                                     <barButtonItem systemItem="play" id="q4b-vd-3ar">
                                         <color key="tintColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -49,15 +101,22 @@
                         </subviews>
                         <color key="backgroundColor" red="0.18823529411764706" green="0.71372549019607845" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6jE-ud-K7D" secondAttribute="bottom" id="4fx-bU-6iA"/>
+                            <constraint firstItem="6jE-ud-K7D" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="5tJ-UI-nJ9"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="WM1-bW-9cs" secondAttribute="bottom" id="ATm-rU-cEf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6jE-ud-K7D" secondAttribute="trailing" constant="-16" id="CVc-2w-ujp"/>
                             <constraint firstAttribute="centerX" secondItem="0rX-F7-JmQ" secondAttribute="centerX" id="Oo2-KU-4aa"/>
                             <constraint firstAttribute="centerY" secondItem="0rX-F7-JmQ" secondAttribute="centerY" id="QR4-zd-Es0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WM1-bW-9cs" secondAttribute="trailing" constant="-16" id="WJy-zS-QSA"/>
+                            <constraint firstItem="6jE-ud-K7D" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="amo-m6-lye"/>
                             <constraint firstItem="WM1-bW-9cs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="amp-XD-dXS"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="backgroundObject" destination="6jE-ud-K7D" id="Jdh-gd-6Qp"/>
+                        <outlet property="playButton" destination="q4b-vd-3ar" id="fgT-fb-xYs"/>
+                        <outlet property="stopButton" destination="Zvf-5H-0As" id="fUH-PN-O3h"/>
                         <outlet property="time" destination="0rX-F7-JmQ" id="taa-2C-7SE"/>
                     </connections>
                 </viewController>

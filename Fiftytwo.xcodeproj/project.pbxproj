@@ -99,7 +99,7 @@
 		5A58C30A1A8BF43400CF08FA = {
 			isa = PBXGroup;
 			children = (
-				5A58C3151A8BF43400CF08FA /* Stopwatch */,
+				5A58C3151A8BF43400CF08FA /* Timer */,
 				852763881AFD3E2300FC29AF /* 52 WatchKit Extension */,
 				852763981AFD3E2300FC29AF /* 52 WatchKit App */,
 				5A58C3141A8BF43400CF08FA /* Products */,
@@ -117,7 +117,7 @@
 			path = Fiftytwo;
 			sourceTree = "<group>";
 		};
-		5A58C3151A8BF43400CF08FA /* Stopwatch */ = {
+		5A58C3151A8BF43400CF08FA /* Timer */ = {
 			isa = PBXGroup;
 			children = (
 				5A58C3181A8BF43400CF08FA /* AppDelegate.swift */,
@@ -128,7 +128,7 @@
 				5A58C3211A8BF43400CF08FA /* LaunchScreen.xib */,
 				5A58C3161A8BF43400CF08FA /* Supporting Files */,
 			);
-			name = Stopwatch;
+			name = Timer;
 			path = Fiftytwo;
 			sourceTree = "<group>";
 		};
@@ -570,6 +570,7 @@
 				852763A51AFD3E2300FC29AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		852763A61AFD3E2300FC29AF /* Build configuration list for PBXNativeTarget "52 WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +579,7 @@
 				852763A81AFD3E2300FC29AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

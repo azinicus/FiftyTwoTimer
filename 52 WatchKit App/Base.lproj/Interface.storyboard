@@ -8,7 +8,7 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_2_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_2_WatchKit_Extension">
                     <items>
                         <button width="1" alignment="left" title="Work" id="875-IN-WQJ"/>
                         <button width="1" alignment="left" title="Reset" id="EEA-Ld-u0P"/>

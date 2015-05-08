@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //Setting colors for background color changer doohickey
+    //Interface stuff - mainly the color changer
     var greenColor: UIColor = UIColor(red:0.19, green:0.71, blue:0.76, alpha:1.0)
     var redColor: UIColor = UIColor(red:0.91, green:0.3, blue:0.24, alpha:1.0)
     var blueColor: UIColor = UIColor(red:0.26, green:0.64, blue:0.79, alpha:1.0)
@@ -38,6 +38,8 @@ class ViewController: UIViewController {
     }
 
 
+    //Timer Stuff
+    
     var timer = NSTimer()
     var count = 3120 //number of seconds in 52 minutes
     

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="52:00" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rX-F7-JmQ">
+                                <rect key="frame" x="24" y="181" width="273" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="e9b-fG-vFO"/>
+                                    <constraint firstAttribute="width" constant="273" id="uwE-IT-V0k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="80"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WM1-bW-9cs">
+                                <rect key="frame" x="30" y="457" width="261" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="stop" id="Zvf-5H-0As">
+                                        <connections>
+                                            <action selector="stop:" destination="vXZ-lx-hvc" id="aij-mE-vSt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nIt-x8-GS5"/>
+                                    <barButtonItem systemItem="play" id="q4b-vd-3ar">
+                                        <connections>
+                                            <action selector="start:" destination="vXZ-lx-hvc" id="l5f-cZ-rts"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="WM1-bW-9cs" secondAttribute="bottom" id="ATm-rU-cEf"/>
+                            <constraint firstAttribute="centerX" secondItem="0rX-F7-JmQ" secondAttribute="centerX" id="Oo2-KU-4aa"/>
+                            <constraint firstAttribute="centerY" secondItem="0rX-F7-JmQ" secondAttribute="centerY" id="QR4-zd-Es0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WM1-bW-9cs" secondAttribute="trailing" constant="-16" id="WJy-zS-QSA"/>
+                            <constraint firstItem="WM1-bW-9cs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="amp-XD-dXS"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="time" destination="0rX-F7-JmQ" id="taa-2C-7SE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

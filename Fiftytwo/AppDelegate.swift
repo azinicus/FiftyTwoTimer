@@ -1,10 +1,11 @@
 //
 //  AppDelegate.swift
-//  FiftyTwo
+//  Stopwatch - originally from github.com/rictyran/Stopwatch
 //
-//  Created by Azin Mehrnoosh on 5/8/15.
+//  Created by Richard Tyran on 2/11/15.
+//  Branched by Azin Mehrnoosh on May 8, 2015
 //
-//  Copyright (c) 2015 Azin Mehrnoosh
+//  Copyright (c) 2015 Richard Tyran. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))
-        //Adding notifications 
+        //Asking permission for notifications
         
         return true
     }

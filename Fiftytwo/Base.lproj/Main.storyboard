@@ -34,6 +34,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5b-U5-c5j" userLabel="Big Button">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="vXZ-lx-hvc" eventType="touchDown" id="CEI-GH-6Ks"/>
+                                </connections>
+                            </button>
                             <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM1-bW-9cs">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -103,6 +112,8 @@
                         <constraints>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6jE-ud-K7D" secondAttribute="bottom" id="4fx-bU-6iA"/>
                             <constraint firstItem="6jE-ud-K7D" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="5tJ-UI-nJ9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M5b-U5-c5j" secondAttribute="trailing" constant="-16" id="8bJ-Qx-9m5"/>
+                            <constraint firstItem="M5b-U5-c5j" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="94M-FV-Aep"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="WM1-bW-9cs" secondAttribute="bottom" id="ATm-rU-cEf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6jE-ud-K7D" secondAttribute="trailing" constant="-16" id="CVc-2w-ujp"/>
                             <constraint firstAttribute="centerX" secondItem="0rX-F7-JmQ" secondAttribute="centerX" id="Oo2-KU-4aa"/>
@@ -110,6 +121,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="WM1-bW-9cs" secondAttribute="trailing" constant="-16" id="WJy-zS-QSA"/>
                             <constraint firstItem="6jE-ud-K7D" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="amo-m6-lye"/>
                             <constraint firstItem="WM1-bW-9cs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="amp-XD-dXS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="M5b-U5-c5j" secondAttribute="bottom" id="j6r-BW-Xfe"/>
+                            <constraint firstItem="M5b-U5-c5j" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="tFM-xd-qzX"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

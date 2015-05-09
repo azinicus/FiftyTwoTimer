@@ -22,6 +22,8 @@
 		852763AC1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */ = {isa = PBXBuildFile; fileRef = 852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */; };
 		852763AD1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */ = {isa = PBXBuildFile; fileRef = 852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */; };
 		852763AE1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */ = {isa = PBXBuildFile; fileRef = 852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */; };
+		856F352F1AFDB65400DC28C7 /* tick.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 856F352E1AFDB65400DC28C7 /* tick.m4a */; };
+		856F35311AFDB81A00DC28C7 /* clicko.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 856F35301AFDB81A00DC28C7 /* clicko.m4a */; };
 		8586A2E61AFD82C900701B16 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8586A2E51AFD82C900701B16 /* click.m4a */; };
 		85AEA0C61AFD33360098ED1D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AEA0C51AFD33360098ED1D /* Notification.swift */; };
 /* End PBXBuildFile section */
@@ -76,6 +78,8 @@
 		8527639C1AFD3E2300FC29AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8527639E1AFD3E2300FC29AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue.dfont; sourceTree = "<group>"; };
+		856F352E1AFDB65400DC28C7 /* tick.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tick.m4a; sourceTree = "<group>"; };
+		856F35301AFDB81A00DC28C7 /* clicko.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = clicko.m4a; sourceTree = "<group>"; };
 		8586A2E51AFD82C900701B16 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
 		85AEA0C51AFD33360098ED1D /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +141,8 @@
 		5A58C3161A8BF43400CF08FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				856F352E1AFDB65400DC28C7 /* tick.m4a */,
+				856F35301AFDB81A00DC28C7 /* clicko.m4a */,
 				8586A2E51AFD82C900701B16 /* click.m4a */,
 				852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */,
 				5A58C3171A8BF43400CF08FA /* Info.plist */,
@@ -283,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A58C31E1A8BF43400CF08FA /* Main.storyboard in Resources */,
+				856F352F1AFDB65400DC28C7 /* tick.m4a in Resources */,
+				856F35311AFDB81A00DC28C7 /* clicko.m4a in Resources */,
 				5A58C3231A8BF43400CF08FA /* LaunchScreen.xib in Resources */,
 				852763AC1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */,
 				5A58C3201A8BF43400CF08FA /* Images.xcassets in Resources */,

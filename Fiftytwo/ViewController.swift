@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 
     //Defining the little clickity click sounds
     var buttonClick = AVAudioPlayer()
+    var buttonTick = AVAudioPlayer()
+    var buttonClicko = AVAudioPlayer()
     
     func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer  {
         //1
@@ -45,19 +47,19 @@ class ViewController: UIViewController {
         self.backgroundObject.backgroundColor = blueColor
         playButton.tintColor = blueColor
         stopButton.tintColor = blueColor
-        buttonClick.play()
+        buttonTick.play()
     }
     @IBAction func colorButton2(sender: UIButton) {
         self.backgroundObject.backgroundColor = redColor
         playButton.tintColor = redColor
         stopButton.tintColor = redColor
-        buttonClick.play()
+        buttonTick.play()
     }
     @IBAction func colorButton3(sender: UIButton) {
         self.backgroundObject.backgroundColor = greenColor
         playButton.tintColor = greenColor
         stopButton.tintColor = greenColor
-        buttonClick.play()
+        buttonTick.play()
     }
 
 
@@ -92,7 +94,7 @@ class ViewController: UIViewController {
         
         time.text = "52:00"
 
-        buttonClick.play()
+        buttonClicko.play()
         
     }
     
@@ -108,6 +110,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         buttonClick = self.setupAudioPlayerWithFile("click", type:"m4a")
+        buttonTick = self.setupAudioPlayerWithFile("tick", type: "m4a")
+        buttonClicko = self.setupAudioPlayerWithFile("clicko", type: "m4a")
 
         // Do any additional setup after loading the view, typically from a nib.
     }

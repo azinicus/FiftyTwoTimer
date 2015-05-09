@@ -8,9 +8,29 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    //Defining the little clickity click sounds
+    var buttonClick = AVAudioPlayer()
+    
+    func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer  {
+        //1
+        var path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
+        var url = NSURL.fileURLWithPath(path!)
+        
+        //2
+        var error: NSError?
+        
+        //3
+        var audioPlayer:AVAudioPlayer?
+        audioPlayer = AVAudioPlayer(contentsOfURL: url, error: &error)
+        
+        //4
+        return audioPlayer!
+    }
+    
     //Interface stuff - mainly the color changer
     var greenColor: UIColor = UIColor(red:0.19, green:0.71, blue:0.76, alpha:1.0)
     var redColor: UIColor = UIColor(red:0.91, green:0.3, blue:0.24, alpha:1.0)
@@ -25,16 +45,19 @@ class ViewController: UIViewController {
         self.backgroundObject.backgroundColor = blueColor
         playButton.tintColor = blueColor
         stopButton.tintColor = blueColor
+        buttonClick.play()
     }
     @IBAction func colorButton2(sender: UIButton) {
         self.backgroundObject.backgroundColor = redColor
         playButton.tintColor = redColor
         stopButton.tintColor = redColor
+        buttonClick.play()
     }
     @IBAction func colorButton3(sender: UIButton) {
         self.backgroundObject.backgroundColor = greenColor
         playButton.tintColor = greenColor
         stopButton.tintColor = greenColor
+        buttonClick.play()
     }
 
 
@@ -68,6 +91,8 @@ class ViewController: UIViewController {
         count = 3120
         
         time.text = "52:00"
+
+        buttonClick.play()
         
     }
     
@@ -75,10 +100,15 @@ class ViewController: UIViewController {
         
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
         
+        buttonClick.play()
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        buttonClick = self.setupAudioPlayerWithFile("click", type:"m4a")
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     

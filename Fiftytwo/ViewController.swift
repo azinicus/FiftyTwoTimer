@@ -80,6 +80,11 @@ class ViewController: UIViewController {
         
         time.text = "\(m):\(s)" //This displays the function that ultimately splits the seconds into H,M,S
         
+        if count == 0 {
+            timer.invalidate()
+            count = 1020
+        }
+        
     }
     
     @IBOutlet var time: UILabel!

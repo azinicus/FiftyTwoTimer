@@ -76,9 +76,12 @@ class ViewController: UIViewController {
     func updateTime() {
         var (h,m,s) = secondsToHoursMinutesSeconds(count)
         
+        var str_min = String(format: "%01d", m)
+        var str_sec = String(format: "%02d", s)
+        
         count--
         
-        time.text = "\(m):\(s)" //This displays the function that ultimately splits the seconds into H,M,S
+        time.text = "\(str_min):\(str_sec)" //This displays the function that ultimately splits the seconds into H,M,S
         
         if count == 0 {
             timer.invalidate()

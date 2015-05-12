@@ -19,7 +19,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jE-ud-K7D">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.76078431372549016" blue="0.58039215686274515" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="Kgv-h6-z02"/>
                                 </constraints>
@@ -48,7 +48,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <items>
                                     <barButtonItem systemItem="stop" id="Zvf-5H-0As">
-                                        <color key="tintColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.18823529410000001" green="0.76078431369999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="stop:" destination="vXZ-lx-hvc" id="aij-mE-vSt"/>
                                         </connections>
@@ -90,7 +90,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <state key="normal" title="⚫︎">
-                                                <color key="titleColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleColor" red="0.18823529410000001" green="0.76078431369999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -100,7 +100,7 @@
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="z4T-LS-psJ"/>
                                     <barButtonItem systemItem="play" id="q4b-vd-3ar">
-                                        <color key="tintColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.18823529410000001" green="0.76078431369999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="start:" destination="vXZ-lx-hvc" id="l5f-cZ-rts"/>
                                         </connections>

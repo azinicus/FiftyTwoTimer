@@ -82,6 +82,7 @@
 		856F35301AFDB81A00DC28C7 /* clicko.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = clicko.m4a; sourceTree = "<group>"; };
 		8586A2E51AFD82C900701B16 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
 		85AEA0C51AFD33360098ED1D /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		85C62F651B02854500F9F290 /* smallbell.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = smallbell.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				856F352E1AFDB65400DC28C7 /* tick.m4a */,
+				85C62F651B02854500F9F290 /* smallbell.m4a */,
 				856F35301AFDB81A00DC28C7 /* clicko.m4a */,
 				8586A2E51AFD82C900701B16 /* click.m4a */,
 				852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */,

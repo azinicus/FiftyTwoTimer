@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var buttonClick = AVAudioPlayer()
     var buttonTick = AVAudioPlayer()
     var buttonClicko = AVAudioPlayer()
+    var timerbell = AVAudioPlayer()
     
     func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer  {
         //1
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     //Interface stuff - mainly the color changer
-    var greenColor: UIColor = UIColor(red:0.19, green:0.71, blue:0.76, alpha:1.0)
+    var greenColor: UIColor = UIColor(red:0.19, green:0.76, blue:0.58, alpha:1.0)
     var redColor: UIColor = UIColor(red:0.91, green:0.3, blue:0.24, alpha:1.0)
     var blueColor: UIColor = UIColor(red:0.26, green:0.64, blue:0.79, alpha:1.0)
     
@@ -66,7 +67,10 @@ class ViewController: UIViewController {
     //Timer Stuff
     
     var timer = NSTimer()
-    var count = 3120 //number of seconds in 52 minutes
+    var count_52 = 10 //number of seconds in 52 minutes
+    var count_17 = 60*17 //number of seconds in 17 minutes
+    var count = 60*52
+    var work_or_play = "work"
     
     //The following code allows for HH:MM:SS type of output
     func secondsToHoursMinutesSeconds (var seconds : Int) -> (h:Int, m:Int, s:Int) {
@@ -76,6 +80,7 @@ class ViewController: UIViewController {
     func updateTime() {
         var (h,m,s) = secondsToHoursMinutesSeconds(count)
         
+        // These help show the 2 character integers instead of 1 character
         var str_min = String(format: "%01d", m)
         var str_sec = String(format: "%02d", s)
         
@@ -83,33 +88,50 @@ class ViewController: UIViewController {
         
         time.text = "\(str_min):\(str_sec)" //This displays the function that ultimately splits the seconds into H,M,S
         
-        if count == 0 {
-            timer.invalidate()
-            count = 1020
+        if count <= 0 {
+            timerbell.play()
+            switchTime()
         }
-        
     }
     
     @IBOutlet var time: UILabel!
     
+    //Function to switch between 52 minutes and 17 minutes
+    func switchTime() {
+        timer.invalidate()
+        if work_or_play == "work" {
+            count = count_17
+            work_or_play = "play"
+            time.text = "17:00"
+        }
+        else {
+            count = count_52
+            work_or_play = "work"
+            time.text = "52:00"
+        }
+    }
+    
     
     //This stops the timer
     @IBAction func stop(sender: AnyObject) {
+        switchTime()
         
-        timer.invalidate()
-        
-        count = 3120
-        
-        time.text = "52:00"
-
         buttonClicko.play()
         
     }
     
     @IBAction func start(sender: AnyObject) {
-        
+        if work_or_play == "work" {
+            timer.invalidate()
+            count = count_52
+        }
+        else {
+            timer.invalidate()
+            count = count_17
+        }
+
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
-        
+
         buttonClick.play()
         
     }
@@ -120,6 +142,7 @@ class ViewController: UIViewController {
         buttonClick = self.setupAudioPlayerWithFile("click", type:"m4a")
         buttonTick = self.setupAudioPlayerWithFile("tick", type: "m4a")
         buttonClicko = self.setupAudioPlayerWithFile("clicko", type: "m4a")
+        timerbell = self.setupAudioPlayerWithFile("smallbell", type: "m4a")
 
         // Do any additional setup after loading the view, typically from a nib.
     }

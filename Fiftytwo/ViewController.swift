@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     //Timer Stuff
     
     var timer = NSTimer()
-    var count_52 = 10 //number of seconds in 52 minutes
+    var count_52 = 60*52 //number of seconds in 52 minutes
     var count_17 = 60*17 //number of seconds in 17 minutes
     var count = 60*52
     var work_or_play = "work"

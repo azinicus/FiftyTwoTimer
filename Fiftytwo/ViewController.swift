@@ -142,7 +142,7 @@ class ViewController: UIViewController {
         buttonClick = self.setupAudioPlayerWithFile("click", type:"m4a")
         buttonTick = self.setupAudioPlayerWithFile("tick", type: "m4a")
         buttonClicko = self.setupAudioPlayerWithFile("clicko", type: "m4a")
-        timerbell = self.setupAudioPlayerWithFile("smallbell", type: "m4a")
+        timerbell = self.setupAudioPlayerWithFile("smallbell2", type: "wav")
 
         // Do any additional setup after loading the view, typically from a nib.
     }

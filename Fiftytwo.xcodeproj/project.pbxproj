@@ -26,6 +26,7 @@
 		856F35311AFDB81A00DC28C7 /* clicko.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 856F35301AFDB81A00DC28C7 /* clicko.m4a */; };
 		8586A2E61AFD82C900701B16 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8586A2E51AFD82C900701B16 /* click.m4a */; };
 		85AEA0C61AFD33360098ED1D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AEA0C51AFD33360098ED1D /* Notification.swift */; };
+		85C62F671B03951000F9F290 /* smallbell2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 85C62F661B03951000F9F290 /* smallbell2.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +83,7 @@
 		856F35301AFDB81A00DC28C7 /* clicko.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = clicko.m4a; sourceTree = "<group>"; };
 		8586A2E51AFD82C900701B16 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
 		85AEA0C51AFD33360098ED1D /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
-		85C62F651B02854500F9F290 /* smallbell.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = smallbell.m4a; sourceTree = "<group>"; };
+		85C62F661B03951000F9F290 /* smallbell2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smallbell2.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				856F352E1AFDB65400DC28C7 /* tick.m4a */,
-				85C62F651B02854500F9F290 /* smallbell.m4a */,
+				85C62F661B03951000F9F290 /* smallbell2.wav */,
 				856F35301AFDB81A00DC28C7 /* clicko.m4a */,
 				8586A2E51AFD82C900701B16 /* click.m4a */,
 				852763AB1AFD46DF00FC29AF /* HelveticaNeue.dfont */,
@@ -294,6 +295,7 @@
 				856F352F1AFDB65400DC28C7 /* tick.m4a in Resources */,
 				856F35311AFDB81A00DC28C7 /* clicko.m4a in Resources */,
 				5A58C3231A8BF43400CF08FA /* LaunchScreen.xib in Resources */,
+				85C62F671B03951000F9F290 /* smallbell2.wav in Resources */,
 				852763AC1AFD46DF00FC29AF /* HelveticaNeue.dfont in Resources */,
 				5A58C3201A8BF43400CF08FA /* Images.xcassets in Resources */,
 				8586A2E61AFD82C900701B16 /* click.m4a in Resources */,

@@ -20,9 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Asking permission for notifications
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))
-            
-        //Status bar light overwrite - doesn't seem to work
-        //UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         
         return true
     }

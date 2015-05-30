@@ -11,7 +11,9 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
+    
+    var colorChanger = ColorWheel()
+    
     //Defining the little clickity click sounds
     var buttonClick = AVAudioPlayer()
     var buttonTick = AVAudioPlayer()
@@ -34,35 +36,19 @@ class ViewController: UIViewController {
         return audioPlayer!
     }
     
-    //Interface stuff - mainly the color changer
-    var greenColor: UIColor = UIColor(red:0.19, green:0.76, blue:0.58, alpha:1.0)
-    var redColor: UIColor = UIColor(red:0.91, green:0.3, blue:0.24, alpha:1.0)
-    var blueColor: UIColor = UIColor(red:0.26, green:0.64, blue:0.79, alpha:1.0)
-    
     @IBOutlet weak var backgroundObject: UIView!
     @IBOutlet weak var stopButton: UIBarButtonItem!
     @IBOutlet weak var playButton: UIBarButtonItem!
  
     //Interface color changer
-    @IBAction func colorButton1(sender: UIButton) {
-        self.backgroundObject.backgroundColor = blueColor
-        playButton.tintColor = blueColor
-        stopButton.tintColor = blueColor
-        buttonTick.play()
-    }
     @IBAction func colorButton2(sender: UIButton) {
-        self.backgroundObject.backgroundColor = redColor
-        playButton.tintColor = redColor
-        stopButton.tintColor = redColor
+        
+        var tempColor = colorChanger.randomColor()
+        self.backgroundObject.backgroundColor = tempColor
+        playButton.tintColor = tempColor
+        stopButton.tintColor = tempColor
         buttonTick.play()
     }
-    @IBAction func colorButton3(sender: UIButton) {
-        self.backgroundObject.backgroundColor = greenColor
-        playButton.tintColor = greenColor
-        stopButton.tintColor = greenColor
-        buttonTick.play()
-    }
-
 
     //Timer Stuff
     

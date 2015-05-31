@@ -33,7 +33,7 @@ struct ColorWheel {
         }
         
         
-//        Random Version
+//        Random color changer version
 //        var unsignedArrayCount = UInt32(colorsArray.count)
 //        var unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
 //        var randomNumber = Int(unsignedRandomNumber)

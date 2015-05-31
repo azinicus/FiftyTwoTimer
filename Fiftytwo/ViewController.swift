@@ -39,7 +39,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var backgroundObject: UIView!
     @IBOutlet weak var stopButton: UIBarButtonItem!
     @IBOutlet weak var playButton: UIBarButtonItem!
- 
+    @IBOutlet weak var colorButton: UIButton!
+    
     //Interface color changer
     @IBAction func colorButton2(sender: UIButton) {
         
@@ -47,11 +48,11 @@ class ViewController: UIViewController {
         self.backgroundObject.backgroundColor = tempColor
         playButton.tintColor = tempColor
         stopButton.tintColor = tempColor
+        colorButton.tintColor = tempColor
         buttonTick.play()
     }
 
     //Timer Stuff
-    
     var timer = NSTimer()
     var count_52 = 60*52 //number of seconds in 52 minutes
     var count_17 = 60*17 //number of seconds in 17 minutes
